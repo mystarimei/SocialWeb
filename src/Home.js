@@ -24,7 +24,7 @@ const Home = () => {
                     return { ...product, flashtime: flashSaleTime }
                 })
             })
-        }, 1000)
+        }, 10000)
         return () => clearInterval(timeId);
     }, [])
     //setState為了要改變狀態，所以把一個Function傳給setState。 
